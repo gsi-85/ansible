@@ -1,0 +1,6 @@
+---
+- name: Gather Interface Status
+  ios_command:
+    commands:
+      - show ip interface brief
+  register: interface_status
